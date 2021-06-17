@@ -19,7 +19,9 @@ n latest
 debian/ubuntu:
 
 ```
-apt-get install nodejs npm -y
+apt install curl -y
+curl -sL https://deb.nodesource.com/setup_16.x | bash -
+apt install build-essential nodejs git -y
 npm install n -g
 n latest
 ```
